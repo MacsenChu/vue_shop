@@ -7,10 +7,11 @@ module.exports = {
     'plugin:vue/essential',
     '@vue/standard'
   ],
-  rules: {
+  'rules': {
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    'space-before-function-paren': 0
+    'space-before-function-paren': 0,
+    'camelcase': ['error', {'allow': ['aa_bb']}]
   },
   parserOptions: {
     parser: 'babel-eslint'
